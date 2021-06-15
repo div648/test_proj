@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Керженец</title>
+    <link rel="stylesheet" href="app.css">
+
+
+
+
+</head>
+
+<body>
+
+
+
+    <div class="menu" id="menu">
+        <div style="text-align: right;">
+            <button class="but" onclick="exit()">Выйти</button>
+        </div>
+        <br>
+        <div class="block">
+            <br>
+            <table style="margin: auto; border: none;">
+                <tbody>
+                    <tr>
+                        <td>
+
+                            <img src="icons\map1.png" class="iconsImg" onclick="maps()">
+
+                        </td>
+                        <td>
+
+                            <img src="icons\painting1.png" class="iconsImg" onclick="fotos()">
+
+                        </td>
+                        <td>
+
+                            <img src="icons\post1.png" class="iconsImg" onclick="posts()">
+
+                        </td>
+                        <td>
+
+                            <img src="icons\game1.png" class="iconsImg" onclick="games()">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <h3 class="tbText">Что посетить?</h3>
+                        </th>
+                        <th>
+                            <h3 class="tbText">Фотографии</h3>
+                        </th>
+                        <th>
+                            <h3 class="tbText">Обратная связь</h3>
+                        </th>
+                        <th>
+                            <h3 class="tbText">Game</h3>
+                        </th>
+
+
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </div>
+
+        <br><br>
+
+        <div class="block">
+
+            <h3>График работы продуктовой машины на 2020г: </h3>
+            <br>
+            <table style="margin: auto;" class="tb">
+
+                <tbody>
+                    <tr class="tb">
+
+                        <th class="tb">
+                            <h3 class="tbText"> Машины </h3>
+                        </th>
+                        <th class="colorTable tb" id="dn1">
+                            <h3 class="tbText"> пн </h3>
+                        </th>
+                        <th class="colorTable tb" id="dn2">
+                            <h3 class="tbText"> вт </h3>
+                        </th>
+                        <th class="colorTable tb" id="dn3">
+                            <h3 class="tbText"> ср </h3>
+                        </th>
+                        <th class="colorTable tb" id="dn4">
+                            <h3 class="tbText"> чт </h3>
+                        </th>
+                        <th class="colorTable tb" id="dn5">
+                            <h3 class="tbText"> пт </h3>
+                        </th>
+                        <th class="colorTable tb" id="dn6">
+                            <h3 class="tbText"> сб </h3>
+                        </th>
+                        <th class="colorTable tb" id="dn7">
+                            <h3 class="tbText"> вс </h3>
+                        </th>
+
+                    </tr>
+                    <tr class="tb">
+
+                        <td class="tb">
+                            <h3 class="tbText">1) Продуктовая</h3>
+                        </td>
+                        <td class="tb">
+                            <h3 class="tbText">13:00 ~14:30</h3>
+                        </td>
+                        <td class="tb">
+                            <h3 class="tbText"> - </h3>
+                        </td>
+                        <td class="tb">
+                            <h3 class="tbText">13:00 ~14:30</h3>
+                        </td>
+                        <td class="tb">
+                            <h3 class="tbText"> - </h3>
+                        </td>
+                        <td class="tb">
+                            <h3 class="tbText">13:00 ~14:30</h3>
+                        </td>
+                        <td class="tb">
+                            <h3 class="tbText"> - </h3>
+                        </td>
+                        <td class="tb">
+                            <h3 class="tbText"> - </h3>
+                        </td>
+
+                    </tr>
+                    <tr class="tb">
+
+                        <td class="tb">
+                            <h3 class="tbText">2) Продуктовая</h3>
+                        </td>
+                        <td class="tb">
+                            <h3 class="tbText"> - </h3>
+                        </td>
+                        <td class="tb">
+                            <h3 class="tbText"> - </h3>
+                        </td>
+                        <td class="tb">
+                            <h3 class="tbText"> - </h3>
+                        </td>
+                        <td class="tb">
+                            <h3 class="tbText"> - </h3>
+                        </td>
+                        <td class="tb">
+                            <h3 class="tbText"> - </h3>
+                        </td>
+                        <td class="tb">
+                            <h3 class="tbText">9:00</h3>
+                        </td>
+                        <td class="tb">
+                            <h3 class="tbText"> - </h3>
+                        </td>
+
+                    </tr>
+
+                    <tr class="tb">
+
+                        <td class="left tb">
+                            <h3 class="tbText">3) Молочная</h3>
+                        </td>
+                        <td class="tb">
+                            <h3 class="tbText"> - </h3>
+                        </td>
+                        <td class="tb">
+                            <h3 class="tbText">13:00 +- 30мин.</h3>
+                        </td>
+                        <td class="tb">
+                            <h3 class="tbText"> - </h3>
+                        </td>
+                        <td class="tb">
+                            <h3 class="tbText"> - </h3>
+                        </td>
+                        <td class="tb">
+                            <h3 class="tbText">13:00 +- 30мин.</h3>
+                        </td>
+                        <td class="tb">
+                            <h3 class="tbText"> - </h3>
+                        </td>
+                        <td class="tb">
+                            <h3 class="tbText"> - </h3>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+            <br><br>
+            <h3 id="car0" class="tbText"></h3>
+            <h3 id="car1" class="tbText"></h3>
+            <h3 id="carM" class="tbText"></h3>
+            <br>
+
+        </div>
+
+    </div>
+
+    <div class="map" id="map">
+        <img src="icons/arrow3.png" class="arrow" onclick="menu()"><br><br>
+
+        <div class="block">
+            <br>
+            <div class="txt">
+                <h2>Что посетить?</h2>
+                <p>В этой статье собраны места, <br> в которые не скучно будет сходить или съездить.</p>
+                <br>
+            </div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2497.7634842792386!2d44.67521529758288!3d56.924948993154395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTbCsDU1JzI3LjkiTiA0NMKwNDAnMzUuOCJF!5e1!3m2!1sru!2sru!4v1597907487427!5m2!1sru!2sru"
+                frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe><br>
+            <p>Фотографии этого места:</p><br><br>
+
+            <img src="foto/IMG_MM1_N1.jpg" class="fotografi"><br><br><img src="foto/IMG_MM1_N2.jpg" class="fotografi"><br><br><br>
+
+        </div><br><br>
+
+        <div class="block">
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2496.726409848945!2d44.6690483160024!3d56.94044090723618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTbCsDU2JzI1LjYiTiA0NMKwNDAnMTYuNSJF!5e1!3m2!1sru!2sru!4v1597913776767!5m2!1sru!2sru"
+                frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <p>Фотографии этого места:</p><br><br>
+            <img src="foto/IMG_MM2_N1.jpg" class="fotografi"><br><br><img src="foto/IMG_MM2_N2.jpg" class="fotografi">
+            <br><br><br>
+        </div><br><br>
+
+        <div class="block">
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1248.0556409326864!2d44.6652396583294!3d56.94962845803596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTbCsDU2JzU4LjciTiA0NMKwMzknNTguOCJF!5e1!3m2!1sru!2sru!4v1598261531046!5m2!1sru!2sru"
+                frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <p>Фотографии этого места:</p><br><br>
+            <img src="foto/IMG_MM3_N1.jpg" class="fotografi">
+            <br><br><br>
+        </div><br><br>
+
+        <div class="block">
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d623.9674205166792!2d44.67815982925479!3d56.953236730141455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTbCsDU3JzExLjciTiA0NMKwNDAnNDMuNCJF!5e1!3m2!1sru!2sru!4v1598261810935!5m2!1sru!2sru"
+                frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <p>Фотографии этого места:</p><br><br>
+            <img src="foto/IMG_MM4_N1.jpg" class="fotografi"><br><br><img src="foto/IMG_MM4_N2.jpg" class="fotografi">
+            <br><br><br>
+        </div><br><br>
+
+
+
+    </div>
+
+    <div class="foto" id="foto">
+        <img src="icons/arrow3.png" class="arrow" onclick="menu()"><br><br>
+        <div class="block">
+            <p>Альбом с фотографиями переехал</p>
+            <a href="https://photos.app.goo.gl/MkvzZPGkUj3bSuAW9" target="blank">
+                <p style="color: #5353ff; text-decoration: underline;">сюда</p>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="game" id="game">
+        <img src="icons/arrow3.png" class="arrow" onclick="menu()"><br><br>
+
+        <div class="block">
+            <br>
+            <button id="switchGameM" onclick="switchGameM()" class="but">Редактор игр</button>
+            <br>
+            <div class="MGame" id="MGame">
+                <br><br>
+                <p>Мне лень создавать много игр, поэтому создай их сам!</p>
+                <p>Данный редактор является обучающим, если ты гид в этой теме,<br> то фигли ты тут делаешь! Иди в VS!</p>
+                <br>
+                <textarea class="textarea" id="newGame"></textarea><br>
+                <button class="but" onclick="eval(document.getElementById('newGame').value)">Play</button>
+                <button class="but" onclick="document.getElementById('newGame').value = ''">Очистить</button>
+                <button class="but" onclick="if (localStorage.myGame != undefined) {if (!confirm('У вас есть сохранённая программа,\nвы действительно хотите её перезаписать?')){ return; }} localStorage.myGame = document.getElementById('newGame').value;">Сохранить</button>
+                <button class="but" onclick="document.getElementById('newGame').value = localStorage.myGame">Открыть</button>
+                <br>
+
+                <p>Подсказка</p>
+                <p>Спецсимволы</p><br>
+                <button onclick="insertAtCaret('newGame', '()');" class="but">()</button>
+                <button onclick="insertAtCaret('newGame', '{}');" class="but">{}</button>
+                <button onclick="insertAtCaret('newGame', '[]');" class="but">[]</button>
+                <button onclick="insertAtCaret('newGame', '<');" class="but"><</button>
+                <button onclick="insertAtCaret('newGame', '>');" class="but">></button>
+                <button onclick="insertAtCaret('newGame', '=');" class="but">=</button>
+
+                <button onclick="insertAtCaret('newGame', ';');" class="but">;</button><br>
+
+                <p>Хранение данных</p><br>
+                <button onclick="insertAtCaret('newGame', 'var ');" class="but">Создать переменную</button><br>
+                <p>Логика</p><br>
+                <button onclick="insertAtCaret('newGame', 'if () {}');" class="but">если {}</button>
+                <button onclick="insertAtCaret('newGame', 'if () {} else {}');" class="but">если {} иначе {}</button>
+                <button onclick="insertAtCaret('newGame', 'if () {} else if () {} else {}');" class="but">если {} иначе если {} иначе {}</button><br>
+                <p>Цыклы</p><br>
+                <button onclick="insertAtCaret('newGame', 'for (var i = ; i <>= ; i) {}');" class="but">for (var i = 0; i >= 100; i++) {}</button>
+                <button onclick="insertAtCaret('newGame', 'while() {}');" class="but">while() {}</button>
+                <br>
+                <p>Создать модальное ...</p><br>
+                <button onclick="insertAtCaret('newGame', 'alert()');" class="but">окно "вывод"</button>
+                <button onclick="insertAtCaret('newGame', 'prompt()');" class="but">окно "вывод/ввод"</button>
+                <button onclick="insertAtCaret('newGame', 'confirm()');" class="but">окно "вывод/ввод"(логика)</button><br>
+                <p>Др. полезные функции</p><br>
+                <button onclick="insertAtCaret('newGame', 'random()');" class="but">Рандом</button><br><br>
+                <button onclick="insertAtCaret('newGame', 'getDateP().');" class="but">Текущая дата<br>(после функции писать через точку<br> первую англ. букву мес. нед. и тд)</button><br><br>
+                <button onclick="insertAtCaret('newGame', 'getTimeP().');" class="but">Текущее время<br>(после функции писать через точку<br>первую англ. букву часов, мин. и сек.)</button><br>
+
+
+
+
+                <br><br>
+
+            </div>
+
+            <div class="finGame" id="finGame">
+
+                <p>Готовые игры</p>
+                <br>
+
+                <button class="but" onclick="game()">Угадай число</button>
+                <button class="but" onclick="winres()">Победители этой игры</button>
+                <br><br>
+                <button class="but" onclick="window.open('prog/XO2Player.html');">Крестики-нолики на двоих</button>
+
+
+
+
+                <br><br>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="post" id="post">
+        <img src="icons/arrow3.png" class="arrow" onclick="menu()"><br><br>
+
+        <div class="block">
+
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScpfRGv4GPfythqNSXgllFilg_-2C63ge1C7iAq3h7hCS9AdQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
+
+        </div>
+
+    </div>
+
+    <div class="reg" id="reg">
+        <br><br>
+        <div class="block">
+
+            <p>Для входа необходим ключ. </p>
+            <p>Если у вас его нет, создайте!</p> <br>
+            <button class="but" onclick="comeIn()">Войти</button><br><br>
+            <p>Создать ключ:</p>
+            <input class="in" type="number" placeholder="KADM(если есть)" id="inKADM"><br><br>
+            <input class="in" type="number" placeholder="Придумайте ключ" id="inKey"><br><br>
+            <button class="but" onclick="makeKey()">Создать</button>
+
+
+            <br><br>
+        </div>
+
+    </div>
+
+    <div class="setting" id="setting">
+        <img src="icons/arrow3.png" class="arrow" onclick="menu()"><br><br>
+
+
+
+
+    </div>
+
+    <script src="Q.js"></script>
+    <script src="app.js"></script>
+    <script>
+        if (Number(localStorage.keyResDay) + 5 >= getDateP().d && Number(localStorage.keyResMon) == getDateP().m && !flagBlock) {
+            comeInNoneStop();
+            localStorage.keyResDay = getDateP().d;
+            localStorage.keyResMon = getDateP().m;
+        }
+    </script>
+
+</body>
+
+</html>

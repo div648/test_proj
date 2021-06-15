@@ -1,0 +1,187 @@
+body {
+    font-family: "Segoe UI";
+    background: url(icons/bg.jpg);
+    font-size: 20px;
+}
+
+.tb {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+iframe {
+    height: 700px;
+    width: 800px;
+}
+
+.block {
+    display: block;
+    width: 1100px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: auto;
+    border: 1px solid #000;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.menu {
+    display: none;
+}
+
+.map {
+    display: none;
+}
+
+.foto {
+    display: none;
+}
+
+.game {
+    display: none;
+}
+
+.MGame {
+    display: none;
+}
+
+.finGame {
+    display: contents;
+}
+
+.post {
+    display: none;
+}
+
+.reg {
+    display: contents;
+}
+
+.setting {
+    display: none;
+}
+
+p {
+    font-size: 30px;
+    text-align: center;
+    font-family: "Segoe UI";
+}
+
+.but {
+    text-align: center;
+    font-size: 25px;
+    border: 2px solid rgb(59, 168, 240);
+    border-radius: 5px;
+}
+
+.in {
+    text-align: center;
+    font-size: 25px;
+    border: 2px solid rgb(59, 168, 240);
+    border-radius: 2px;
+}
+
+.fotografi {
+    height: 300px;
+}
+
+.fotografi1 {
+    height: 400px;
+}
+
+.left {
+    text-align: left;
+}
+
+.colorTable {
+    background-color: #ffffff;
+}
+
+.iconsImg {
+    height: 120px;
+    width: 120px;
+    margin: 2px 4px;
+}
+
+.arrow {
+    height: 50px;
+}
+
+.textarea {
+    text-align: center;
+    font-size: 25px;
+    height: 400px;
+    width: 600px;
+    text-align: left;
+    border: #000 solid 2px;
+    border-radius: 10px;
+}
+
+.tbText {
+    font-size: 20px;
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+@media (max-width: 1000px) {
+    .block {
+        display: block;
+        width: 880px;
+        background-color: rgba(255, 255, 255, 0.8);
+        margin: auto;
+        border: 2px solid rgb(40, 40, 40);
+        border-radius: 20px;
+        text-align: center;
+    }
+    .tb {
+        border: 2px solid rgb(40, 40, 40);
+        border-collapse: collapse;
+        width: 90%;
+    }
+    iframe {
+        height: 700px;
+        width: 840px;
+    }
+    .fotografi {
+        height: 450px;
+    }
+    .fotografi1 {
+        height: 550px;
+    }
+    .iconsImg {
+        height: 180px;
+        width: 180px;
+    }
+    .but {
+        text-align: center;
+        font-size: 55px;
+        border-radius: 10px;
+    }
+    .in {
+        text-align: center;
+        font-size: 60px;
+        border-radius: 8px;
+    }
+    p {
+        font-size: 40px;
+        text-align: center;
+        font-family: "Segoe UI";
+        color: rgb(20, 20, 20);
+    }
+    .arrow {
+        height: 100px;
+    }
+    .textarea {
+        text-align: center;
+        font-size: 25px;
+        height: 460px;
+        width: 750px;
+        text-align: left;
+        border: rgb(40, 40, 40) solid 2px;
+        border-radius: 15px;
+    }
+    .tbText {
+        font-size: 35px;
+        margin: 0px;
+        color: rgb(20, 20, 20);
+    }
+}
